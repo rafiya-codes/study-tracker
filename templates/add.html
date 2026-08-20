@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Add a Resource</h1>
+
+    <form method="POST" action="/add">
+        <label>Subject</label><br>
+        <input type="text" name="subject" required><br><br>
+
+        <label>Title</label><br>
+        <input type="text" name="title" required><br><br>
+
+        <label>Link</label><br>
+        <input type="url" name="link" required><br><br>
+
+        <input type="submit" value="Save Resource">
+
+    </form>
+{% endblock %}
